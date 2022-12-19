@@ -40,7 +40,7 @@ export class App extends Component {
               positivePercentage={countPositiveFeedbackPercentage}
             />
           ) : (
-            <Notification message="There is no feedback" />
+            <Notification message="No feedback given" />
           )}
         </Section>
       </>
