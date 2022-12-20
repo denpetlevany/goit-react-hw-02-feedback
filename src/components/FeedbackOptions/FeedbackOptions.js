@@ -20,6 +20,10 @@ export default function FeedbackOptions({ options, onLeaveFeedback }) {
 };
 
 FeedbackOptions.propTypes = {
-    options: PropTypes.object.isRequired,
+    options: PropTypes.shape({
+        good: PropTypes.number.isRequired,
+        neutral: PropTypes.number.isRequired,
+        bad: PropTypes.number.isRequired,
+  }),
     onLeaveFeedback: PropTypes.func.isRequired,
 };
